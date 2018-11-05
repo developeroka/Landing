@@ -2,8 +2,7 @@ body{
     padding: 0;
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
- 
-
+    background: #12385d;
     .main{
         display: flex;
         flex-direction: row;
@@ -13,19 +12,18 @@ body{
             width: 50%;
             display: flex;
             align-items: center;
+            justify-content: center;
             flex-direction: column;
             padding-bottom: 30px;
 
-            .logo{
-                img{
-                    width: 400px;
-                    margin: auto
-                }
-            }
-            .login
-            {
+            .login{
                 display: flex;
                 flex-direction: column;
+
+                input[type=text]{
+                    background: transparent;
+                    border-bottom:1px solid #fff;
+                }
 
                 .login-btn{
                     width:300px;
@@ -51,25 +49,35 @@ body{
             }
             .text{
                 text-align: center;
-                font-size: 35px;
-                
-                & > p:first-child{
-                    font-size: 35px;
-                    font-weight: bold;
-                }
-                
+                color: #fff;
+                p {
+                    font-size: 20px;
+                }                
             }
         }
 
         .left-content{
-            width: 50%;
-            background-image: url("/images/back.jpg");
+            display: flex;
+            align-items: center;
+            justify-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 70%;
+            background-image: linear-gradient(to right, rgb(255, 255, 255), rgba(241, 237, 237, 0.418)) ,url("/images/back2.jpg");
             background-size: cover;
+            padding: 100px;
             
             img{
-                width: 100%;
+                width: 300px;
+            }
+
+            p{
+                font-size: 20px;  
+                font-weight: 500; 
+                color: #114169; 
             }
                 
+
         }
 
     }
