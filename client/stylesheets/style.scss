@@ -1,12 +1,28 @@
+@font-face {
+    font-family: 'iransans';
+    src: url('/fonts/iransans/IRANSansWeb.eot'); /* IE9 Compat Modes */
+    src: url('/fonts/iransans/IRANSansWeb.woff2') format('woff2'), /* Super Modern Browsers */
+         url('/fonts/iransans/IRANSansWeb.woff') format('woff'), /* Pretty Modern Browsers */
+         url('/fonts/iransans/IRANSansWeb.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+html{
+    height: 100%;
+}
+
 body{
     padding: 0;
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: #12385d;
+    min-height: 100%;   
+    height: 100%;    
+    font-family: 'iransans'; 
     .main{
         display: flex;
         flex-direction: row;
         margin: auto;
+        min-height: 100%;
         justify-content: space-between;
         .rigth-content{
             width: 50%;
@@ -52,6 +68,7 @@ body{
                 color: #fff;
                 p {
                     font-size: 20px;
+                    padding: 20px;
                 }                
             }
         }
